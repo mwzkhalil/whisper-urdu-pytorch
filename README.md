@@ -34,7 +34,6 @@ Trained a small Urdu whisper model
 | `STRIDE_DURATION`       | 0.010                  | Stride between consecutive windows in seconds (10 ms).                      |
 | `max_t`                 | 500                    | Maximum time steps in the spectrogram.                                      |
 | `n_channels`            | 80                     | Number of channels in the input spectrogram.                                |
-"""
 
 ### Dataset
 
