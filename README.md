@@ -1,8 +1,8 @@
 
 
-# Whisper model in Pytorch from scratch implementation
+# Urdu Whisper model in Pytorch from scratch implementation
 
-Trained a small whisper model coded and trained from scratch in Pytorch 
+Trained a small Urdu whisper model
 
 
 
@@ -12,17 +12,17 @@ Trained a small whisper model coded and trained from scratch in Pytorch
 
 | Parameter               | Value                  | Description                                                                 |
 |-------------------------|------------------------|-----------------------------------------------------------------------------|
-| `batch_size`            | 64                     | The number of samples processed before the model is updated.                |
-| `max_lr`                | 2e-4                   | Maximum learning rate.                                                      |
+| `batch_size`            |128                     | The number of samples processed before the model is updated.                |
+| `max_lr`                |1.5e-3                  | Maximum learning rate.                                                      |
 | `dropout`               | 0.1                    | Dropout rate for regularization.                                            |
-| `epochs`                | 10                     | Number of training epochs.                                                  |
+| `epochs`                |2                       | Number of training epochs.                                                  |
 | `block_size`            | 64                     | Sequence length (number of tokens or time steps).                           |
-| `tgt_vocab_size`        | 50262     | Size of the target vocabulary.                                              |
-| `embeddings_dims`       | 384                    | Dimensionality of token embeddings.                                         |
+| `tgt_vocab_size`        | 200024                 | Size of the target vocabulary.                                              |
+| `embeddings_dims`       | 512                    | Dimensionality of token embeddings.                                         |
 | `attn_dropout`          | 0.1                    | Dropout rate for attention layers.                                          |
-| `no_of_heads`           | 6                      | Number of attention heads in multi-head attention.                          |
+| `no_of_heads`           | 4                      | Number of attention heads in multi-head attention.                          |
 | `no_of_decoder_layers`  | 6                      | Number of decoder layers in the model.                                      |
-| `weight_decay_optim`    | 0.01                   | Weight decay for the optimizer.                                             |
+| `weight_decay_optim`    | 0.1                    | Weight decay for the optimizer.                                             |
 | `log_mel_features`      | 80                     | Number of Mel spectrogram features.                                         |
 | `kernel_size`           | 3                      | Kernel size for convolutional layers.                                       |
 | `stride`                | 2             | Stride for convolutional layers.                                            |
@@ -34,12 +34,11 @@ Trained a small whisper model coded and trained from scratch in Pytorch
 | `STRIDE_DURATION`       | 0.010                  | Stride between consecutive windows in seconds (10 ms).                      |
 | `max_t`                 | 500                    | Maximum time steps in the spectrogram.                                      |
 | `n_channels`            | 80                     | Number of channels in the input spectrogram.                                |
-| `hidden_dim`            | 4 * `embeddings_dims`  | Number of neurons in the feed-forward network (FFN).                        |
 """
 
 ### Dataset
 
-[Gigaspeech](https://huggingface.co/datasets/speechcolab/gigaspeech)
+[Common Voice Corpus 11.0 ](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0)
 
 Used the 'xs' snapshot.
 
@@ -48,7 +47,7 @@ Used the 'xs' snapshot.
 
 
 ### Epochs/Steps
-Epochs (train) = 10
+Epochs (train) = 2
 
 Val iterations = every epoch
 
