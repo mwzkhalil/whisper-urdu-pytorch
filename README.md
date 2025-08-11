@@ -2,7 +2,7 @@
 
 # Urdu Whisper model in Pytorch from scratch implementation
 
-Trained a small Urdu whisper model
+Trained a 135 million parameters Urdu whisper model
 
 
 
