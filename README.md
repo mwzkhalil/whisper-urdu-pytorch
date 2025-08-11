@@ -53,7 +53,7 @@ Val iterations = every epoch
 
 ### Loss Curves
 
-![Train and Val loss curves](img/loss.jpg)
+![Train and Val loss curves](image/loss.png)
 
 
 
