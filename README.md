@@ -35,6 +35,11 @@ Trained a small Urdu whisper model
 | `max_t`                 | 500                    | Maximum time steps in the spectrogram.                                      |
 | `n_channels`            | 80                     | Number of channels in the input spectrogram.                                |
 
+
+###  Weights on Hugging Face
+
+[Whisper Urdu](https://huggingface.co/mahwizzzz/whisper-urdu-pytorch)
+
 ### Dataset
 
 [Common Voice Corpus 11.0 ](https://huggingface.co/datasets/mozilla-foundation/common_voice_11_0)
